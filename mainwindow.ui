@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>640</width><height>480</height></rect></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item><widget class="QTableWidget" name="tableWidget"><property name="columnCount"><number>5</number></property>
+     <column><property name="text"><string>Партия</string></property></column>
+     <column><property name="text"><string>Наименование</string></property></column>
+     <column><property name="text"><string>Кол-во</string></property></column>
+     <column><property name="text"><string>Дата поставки</string></property></column>
+     <column><property name="text"><string>Срок годности</string></property></column>
+    </widget></item>
+    <item><layout class="QHBoxLayout" name="btnLayout">
+     <item><widget class="QPushButton" name="addBtn"><property name="text"><string>Добавить</string></property></widget></item>
+     <item><widget class="QPushButton" name="deleteBtn"><property name="text"><string>Удалить</string></property></widget></item>
+     <item><widget class="QPushButton" name="searchBtn"><property name="text"><string>Поиск по дате</string></property></widget></item>
+     <item><widget class="QPushButton" name="expiryBtn"><property name="text"><string>Истекает сегодня</string></property></widget></item>
+     <item><widget class="QPushButton" name="perishableBtn"><property name="text"><string>Скоропортящиеся</string></property></widget></item>
+     <item><widget class="QPushButton" name="graphBtn"><property name="text"><string>График</string></property></widget></item>
+    </layout></item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/><connections/>
+</ui>

@@ -1,0 +1,8 @@
+<!-- information.ui -->
+<ui version="4.0"><class>InformationDialog</class>
+<widget class="QDialog" name="InformationDialog">
+ <layout class="QVBoxLayout"><item><widget class="QTextEdit" name="textEdit"><property name="readOnly"><bool>true</bool></property></widget></item>
+ <item><widget class="QDialogButtonBox" name="buttonBox"><property name="standardButtons"><set>QDialogButtonBox::Ok</set></property></widget></item></layout>
+</widget><resources/><connections>
+ <connection><sender>buttonBox</sender><signal>accepted()</signal><receiver>InformationDialog</receiver><slot>accept()</slot></connection>
+</connections></ui>

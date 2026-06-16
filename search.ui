@@ -1,0 +1,9 @@
+<ui version="4.0"><class>SearchDialog</class>
+<widget class="QDialog" name="SearchDialog">
+ <layout class="QVBoxLayout"><item><widget class="QLabel" name="label"><property name="text"><string>Показать товары с даты:</string></property></widget></item>
+ <item><widget class="QDateEdit" name="dateEdit"><property name="calendarPopup"><bool>true</bool></property></widget></item>
+ <item><widget class="QDialogButtonBox" name="buttonBox"><property name="standardButtons"><set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set></property></widget></item></layout>
+</widget><resources/><connections>
+ <connection><sender>buttonBox</sender><signal>accepted()</signal><receiver>SearchDialog</receiver><slot>accept()</slot></connection>
+ <connection><sender>buttonBox</sender><signal>rejected()</signal><receiver>SearchDialog</receiver><slot>reject()</slot></connection>
+</connections></ui>
